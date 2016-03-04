@@ -14,8 +14,8 @@
 Dialog::Dialog(QWidget *parent) :
     QDialog(parent)
 {
-    setWindowFlags(Qt::WindowDoesNotAcceptFocus | Qt::Tool | Qt::FramelessWindowHint
-                   | Qt::WindowStaysOnTopHint);
+    setWindowFlags(Qt::WindowDoesNotAcceptFocus | Qt::FramelessWindowHint |
+                   Qt::WindowStaysOnTopHint | Qt::Tool | Qt::X11BypassWindowManagerHint);
     initWidgets();
 }
 
